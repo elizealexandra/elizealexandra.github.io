@@ -1,0 +1,26 @@
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>A propos</h4>
+                <div class="hline-w"></div>
+                <p>{{ site.about }}</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contactez-nous</h4>
+                <div class="hline-w"></div>
+				<p>Tél: <a href="tel: {{ site.tel }}">{{ site.tel}}</a></p>
+                <p>Email: <a href="mailto: {{ site.email }}">{{ site.email}}</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4>Notre adresse</h4>
+                <div class="hline-w"></div>
+                <p>
+                    {% for line in site.address.first.lines %}
+                        {{ line }} <br>
+                    {% endfor %}
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->

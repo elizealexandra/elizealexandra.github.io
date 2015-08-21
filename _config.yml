@@ -1,0 +1,64 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: Elite Production
+description: "Elite Production est une société de production audiovisuelle qui propose une offre multiformat."
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://eliteproduction.fr"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#43aaa3" #"#349B89" #"#00b3fe" 
+  primary_rgb: "52,155,137" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#2D2F31" #"#1e1f20" #"#384452"
+  link: "#f16162"
+  link_hover: "#f16162"
+  footer_heading: "#ffffff"
+  footer_content: "#ffffff"
+  
+  
+### CONTACT SETTINGS ###
+    
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines: 
+    - Palais des Congrès de Madiana
+    - 97233 SCHOELCHER
+email: elizealexandra@gmail.com
+tel: +596 696 22 25 26
+
+
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+    
+# Members information. Shown on About page.
+members:
+  - name: Mark Webber
+    position: CEO
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team01.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+    
+# Clients information. Shown on Home and About pages.
+clients:
+  - name: TF1 Pub
+    img: tf1pub.png
+  - name: ATV
+    img: atv.png
+  - name: Indies Live
+    img: indies.png
+  - name: Total caraibes
+    img: total.png
+  - name: Région Martinique
+    img: regionmq.png
+    
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Elite Production est une société de production audiovisuelle qui propose une offre multiformat."
