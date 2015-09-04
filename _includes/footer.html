@@ -6,11 +6,14 @@
                 <div class="hline-w"></div>
                 <p>{{ site.about }}</p>
             </div>
-            <div class="col-md-4">
-                <h4>Contactez-nous</h4>
+			<div class="col-md-4">
+                <h4>Réseaux sociaux</h4>
                 <div class="hline-w"></div>
-				<p>Tél: <a href="tel: {{ site.tel }}">{{ site.tel}}</a></p>
-                <p>Email: <a href="mailto: {{ site.email }}">{{ site.email}}</a></p>
+                <p>
+                    {% for network in site.social %}
+                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
+                    {% endfor %}
+                </p>
             </div>
             <div class="col-md-4">
                 <h4>Notre adresse</h4>

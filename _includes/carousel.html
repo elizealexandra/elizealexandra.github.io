@@ -1,4 +1,10 @@
 <div class="col-lg-10 col-lg-offset-1 centered">
+	{% if page.link != null %}
+	<!-- 4:3 aspect ratio -->
+	<div class="embed-responsive embed-responsive-4by3">
+	  <iframe class="embed-responsive-item" src="{{ page.link }}" allowfullscreen></iframe>
+	</div>
+	{% else %}
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -25,4 +31,5 @@
             {% endfor %}
         </div>
     </div> <!--/Carousel -->
+	{% endif %}
 </div>

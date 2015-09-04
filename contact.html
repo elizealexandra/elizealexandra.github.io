@@ -4,17 +4,19 @@ title: Contact
 permalink: /contact/
 ---
 
+<div id="contactwrap"></div>
+
 <div class="container mtb" id="contact">
     <div class="row centered">
 		<div class="col-md12">
 			<p>Email: <strong><a href="mailto: {{ site.email }}">{{ site.email }}</a></strong></p>
 			<p>Tél: <strong><a href="tel: {{ site.tel }}">{{ site.tel }}</a></strong></p>
-		<i class="fa fa-map-marker fa-2x"></i>
-        <p>
-			{% for line in site.address.first.lines %}
-				{{ line }} <br>
-			{% endfor %}
-        </p>
+			<i class="fa fa-map-marker fa-2x"></i>
+			<p>
+				{% for line in site.address.first.lines %}
+					{{ line }} <br>
+				{% endfor %}
+			</p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
