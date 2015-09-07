@@ -8,10 +8,21 @@
 	URL: http://alvarez.is
 	
 ################################################################# */ 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/assets/fonts/league/leaguegothic-regular-webfont.eot');
+    src: url('/assets/fonts/league/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/league/leaguegothic-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/league/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/league/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 /*	################################################################
 	1. GENERAL STRUCTURES
@@ -26,20 +37,37 @@ body {
 	margin: 0; 
 	height: 100%; 
 	color: {{ site.colors.secondary }};
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-family: 'League Gothic', sans-serif;
+}
+
+h1, .h1 {
+	font-size: 60px;
+}
+
+h2, .h2 {
+	font-size: 48px;
+}
+
+h3, .h3 {
+	font-size: 36px;
+}
+
+h4, .h4 {
+	font-size: 24px;
+}
+
+h5, .h5 {
+	font-size: 18px;
 }
 
 p { 
 	padding: 0; 
 	margin-bottom: 12px; 
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px; 
 	line-height: 24px;
 	color: {{ site.colors.secondary }}; 
@@ -102,6 +130,11 @@ a:focus {
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
 
+blockquote {
+	font-family: 'League Gothic';
+    border-left: none;
+}
+
 .h1, .h2, .h3, h1, h2, h3 {
     margin-bottom: 30px;
     margin-top: 0px;
@@ -114,8 +147,8 @@ a:focus {
 }
 
 .navbar-brand {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
+	font-family: 'League Gothic';
+	font-size: 24px;
 }
 
 .navbar-header .navbar-brand {
@@ -124,8 +157,8 @@ a:focus {
 
 .navbar-default .navbar-nav > li > a {
 	color: white;
-	font-weight: 700;
-	font-size: 12px;
+	font-family: 'League Gothic';
+	font-size: 24px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -148,7 +181,6 @@ a:focus {
 
 .dropdown-menu > li > a {
 	color: white;
-	font-weight: 700;
 	font-size: 12px;
 }
 
@@ -240,7 +272,6 @@ a:focus {
 
 #headerwrap h3, h5 {
 	color: white;
-	font-weight: 400;
 }
 
 #headerwrap h1 {
@@ -271,6 +302,7 @@ a:focus {
 
 /* Portfolio Wrap */
 #portfoliowrap {
+	margin-bottom: 60px;
 	padding-top: 60px;
 	display: block;
 	text-align: center
@@ -445,7 +477,6 @@ a:focus {
 
 .ctitle {
 	color: {{ site.colors.primary }};
-	font-weight: 700;
 	margin-bottom: 15px;
 }
 
@@ -487,7 +518,6 @@ csmall {
 
 #contact, #contact p {
     font-size: 26px;
-    font-weight: 300;
     line-height: 48px;
 }
 
