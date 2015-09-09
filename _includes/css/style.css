@@ -161,6 +161,18 @@ blockquote {
     border-left: none;
 }
 
+#home h1 {
+	text-transform: uppercase;
+}
+
+#home footer {
+	color: white;
+}
+
+blockquote .small::before, blockquote footer::before, blockquote small::before {
+    content: none;
+}
+
 .h1, h1 {
     margin-bottom: 10px;
     margin-top: 0px;
@@ -289,6 +301,14 @@ blockquote {
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
+
+.bgimage { 
+  margin:0;
+  padding:0;
+  background: url(/assets/img/front-new.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
 
 .home-title {
 	text-align: center;
