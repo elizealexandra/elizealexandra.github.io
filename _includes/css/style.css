@@ -27,10 +27,10 @@
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-	* { 
-		margin: 0;
-		padding: 0px;
-	} 
+* { 
+	margin: 0;
+	padding: 0px;
+} 
 
 body { 
 	background: #ffffff; 
@@ -38,7 +38,8 @@ body {
 	height: 100%; 
 	color: {{ site.colors.secondary }};
 	font-family: 'Open Sans', sans-serif;
-	}
+	padding-top: 70px;
+}
 
 .copyright {
 	font-size: 12px;
@@ -55,23 +56,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-	font-size: 60px;
-}
-
-h2, .h2 {
-	font-size: 48px;
-}
-
-h3, .h3 {
 	font-size: 36px;
 }
 
-h4, .h4 {
+h2, .h2 {
+	font-size: 30px;
+}
+
+h3, .h3 {
 	font-size: 24px;
 }
 
-h5, .h5 {
+h4, .h4 {
 	font-size: 18px;
+}
+
+h5, .h5 {
+	font-size: 14px;
 }
 
 p { 
@@ -136,6 +137,21 @@ a:focus {
 	text-align: center
 }
 
+.parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.vertical-align .text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
@@ -145,7 +161,12 @@ blockquote {
     border-left: none;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
+.h1, h1 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.h2, .h3, h2, h3 {
     margin-bottom: 30px;
     margin-top: 0px;
 }
@@ -264,6 +285,7 @@ blockquote {
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
 }
+
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
@@ -272,10 +294,30 @@ blockquote {
 	text-align: center;
 }
 
+.paddingtop {
+   padding: 30px 0px 0px 0px;
+   margin: 0 !important;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.bggrey {
+	background-color: {{ site.colors.primary }};
+	color: white;
+}
+
+.bggrey blockquote {
+	padding-top: 10px;
+	margin: 0;
+}
+
 #headerwrap {
 	background-color: {{ site.colors.primary }};
 	min-height: 0px;
-	padding-top: 140px;
+	padding-top: 70px;
 	padding-bottom: 80px;
 	text-align: center;
 }
@@ -303,12 +345,6 @@ blockquote {
 .icon {
 	color: {{ site.colors.primary }};
 }
-
-/*#service i {
-	color: {{ site.colors.primary }};
-	font-size: 60px;
-	padding: 15px;
-}*/
 
 /* Portfolio Wrap */
 #portfoliowrap {
@@ -450,9 +486,8 @@ blockquote {
 
 #blue {
 	background: {{ site.colors.primary }};
-	margin-top: 60px;
 	margin-bottom: 60px;
-	padding-top: 25px;
+	padding-top: 15px;
 	padding-bottom: 25px;
 }
 
@@ -505,6 +540,17 @@ csmall {
 }
 
 /* Contact Page */
+
+.contact-bg-image {
+background-image: url(../img/contact.jpg);
+background-size: 100%;
+	margin-top: -60px;
+}
+
+.contact-bg-image-inside {
+padding-top: 36.20%/*37.17%; /* this is actually (426/1140)*100 */
+}
+
 #contactwrap {
 	background: url(../img/contact.jpg) no-repeat center top;
 	margin-top: -60px;
@@ -527,7 +573,7 @@ csmall {
 }
 
 #contact, #contact p {
-    font-size: 26px;
+    font-size: 18px;
     line-height: 48px;
 }
 
@@ -574,4 +620,61 @@ a.anchor{
     position: relative; 
     top: -80px; 
     visibility: hidden;
+}
+
+@media(min-width:568px) {
+
+	.bggrey blockquote {
+		padding-top: 70px;
+	}
+	
+}
+
+@media(min-width:768px) {
+
+    h1, .h1 {
+        font-size: 60px;
+    }
+
+	h2, .h2 {
+		font-size: 48px;
+	}
+
+	h3, .h3 {
+		font-size: 36px;
+	}
+
+	h4, .h4 {
+		font-size: 24px;
+	}
+
+	h5, .h5 {
+		font-size: 18px;
+	}
+	
+	#contact, #contact p {
+		font-size: 26px;
+		line-height: 48px;
+	}
+	
+	.bggrey blockquote {
+		padding-top: 80px;
+	}
+	
+}
+
+@media(min-width:1024px) {
+
+	.bggrey blockquote {
+		padding-top: 110px;
+	}
+	
+}
+
+@media(min-width:1200px) {
+
+	.bggrey blockquote {
+		padding-top: 180px;
+	}
+	
 }

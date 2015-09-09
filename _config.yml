@@ -2,7 +2,7 @@
 
 # Site settings
 title: Elite Production
-description: "Elite Production est une société de production audiovisuelle qui propose une offre multiformat."
+description: "Elite production est une société de production audiovisuelle basée en Martinique qui propose des reportages multi-formats pour les chaines de télévisions, les institutions ou les entreprises."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://eliteproduction.fr"
@@ -59,16 +59,16 @@ members:
     
 # Clients information. Shown on Home and About pages.
 clients:
-  - name: TF1 Pub
-    img: tf1pub.png
-  - name: ATV
-    img: atv.png
-  - name: Indies Live
-    img: indies.png
-  - name: Total caraibes
-    img: total.png
   - name: Région Martinique
     img: regionmq.png
+  - name: ATV
+    img: atv.png
+  - name: France Ô
+    img: franceo.png
+  - name: Total caraibes
+    img: total.png
+  - name: Indies Live
+    img: indies.png
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Elite Production est une société de production audiovisuelle qui propose une offre multiformat."
+about: "Elite production est une société de production audiovisuelle basée en Martinique qui propose des reportages multi-formats pour les chaines de télévisions, les institutions ou les entreprises."
