@@ -2,7 +2,7 @@
 
 # Site settings
 title: Elite Production
-description: "Elite production est une société de production audiovisuelle basée en Martinique qui propose des reportages multi-formats pour les chaines de télévisions, les institutions ou les entreprises."
+description: "Elite production est une société de production audiovisuelle basée entre la Martinique et Paris qui propose des reportages multi-formats pour les chaines de télévisions, les institutions ou les entreprises."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://eliteproduction.fr"
@@ -71,4 +71,4 @@ clients:
     img: indies.png
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Elite production est une société de production audiovisuelle basée en Martinique qui propose des reportages multi-formats pour les chaines de télévisions, les institutions ou les entreprises."
+about: "Elite production est une société de production audiovisuelle basée entre la Martinique et Paris qui propose des reportages multi-formats pour les chaines de télévisions, les institutions ou les entreprises."
